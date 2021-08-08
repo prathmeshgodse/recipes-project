@@ -1,0 +1,141 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Noto Sans JP", sans-serif;
+  text-decoration: none;
+  color: black;
+}
+
+.navbar {
+  background-color: rgb(26, 26, 26);
+}
+
+.brand {
+  padding: 15px 0;
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+.brand a {
+  color: rgb(196, 196, 196);
+  font-family: "IM Fell English", serif;
+}
+
+.title {
+  background-color: rgb(190, 190, 55);
+  text-align: center;
+  height: 89vh;
+}
+
+.title-text.large {
+  padding-top: 28vh;
+  font-size: 3rem;
+}
+
+.title-text.small {
+  padding-top: 30vh;
+}
+
+.brand-large {
+  font-family: "IM Fell English", serif;
+  font-size: 6rem;
+}
+
+.introduction {
+  background-color: rgb(250, 250, 116);
+  height: 100vh;
+}
+
+.introduction-text {
+  text-align: center;
+  font-size: 3rem;
+  padding: 35vh 40vh;
+  line-height: 4.5rem;
+}
+
+.slide-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  transition: 250ms ease-in;
+}
+
+.slide-img {
+  width: 98.9vw;
+  height: 100vh;
+  object-fit: cover;
+}
+
+.carousel {
+  position: relative;
+  height: 100vh;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+}
+
+.btn-carousel {
+  position: absolute;
+  height: 30vh;
+  width: 12%;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+}
+
+.btn-carousel:hover {
+  background-color: rgba(0, 0, 0, 0.548);
+}
+
+.btn-carousel-right {
+  right: 0px;
+}
+
+.btn-img {
+  width: 40%;
+}
+
+.slide-text-container {
+  position: absolute;
+  bottom: 0;
+  right: 50%;
+  transform: translateX(50%);
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.548);
+}
+
+.slide-text {
+  font-size: 3rem;
+  font-weight: bolder;
+  text-align: center;
+  padding: 5% 0;
+  color: white;
+}
+
+.hidden {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .introduction-text {
+    padding: 10vh;
+  }
+
+  .slide-img {
+    width: 100%;
+  }
+
+  .slide {
+    left: 0;
+  }
+}
