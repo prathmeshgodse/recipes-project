@@ -141,7 +141,7 @@ a:hover {
 
 /* TEST CODE! */
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 600px) {
   .title-text.large {
     font-size: 5vh;
     padding-top: 32vh;
@@ -160,10 +160,17 @@ a:hover {
 
   .introduction-text {
     font-size: 4vh;
-    padding: 27vmax 0;
+    padding: 27vmax 2rem;
+    max-width: 100%;
   }
 
   .slide-img {
     width: 100vw;
+  }
+
+  .slide-text {
+    font-size: 4vh;
+    font-weight: bolder;
+    text-align: center;
   }
 }
